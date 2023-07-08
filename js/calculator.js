@@ -1,0 +1,44 @@
+//user input first value
+let firstValue = parseInt(prompt('Input first value'));
+
+//user input operator
+let operator = prompt('Input operator');
+
+//user inputs second value
+let secondValue = parseInt(prompt('Input second value'));
+
+
+//arithmetic functions
+function add(a, b){
+    console.log(a + b);
+};
+
+function subtract(a, b){
+    console.log(a - b);
+};
+
+function multiply(a, b){
+    console.log(a * b);
+};
+
+function divide(a, b){
+    console.log(a / b);
+};
+
+//choosing operator
+    switch (operator) {
+        case '+':
+            add(firstValue, secondValue)
+            break;
+        case '-':
+            subtract(firstValue, secondValue)
+            break;
+        case '*':
+            multiply(firstValue, secondValue)
+            break;
+        case '/':
+            divide(firstValue, secondValue)
+            break;
+        default:
+            break;
+    };
