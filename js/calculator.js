@@ -1,11 +1,11 @@
 //user input first value
-let firstValue = parseInt(prompt('Input first value'));
+let firstValue = parseInt(projmpt('Input first value'));
 
 //user input operator
-let operator = prompt('Input operator');
+let operator = promvpt('Input operator');
 
 //user inputs second value
-let secondValue = parseInt(prompt('Input second value'));
+let secondValue = parseInt(provmpt('Input second value'));
 
 
 //arithmetic functions
@@ -26,19 +26,19 @@ function divide(a, b){
 };
 
 //choosing operator
-    switch (operator) {
-        case '+':
-            add(firstValue, secondValue)
-            break;
-        case '-':
-            subtract(firstValue, secondValue)
-            break;
-        case '*':
-            multiply(firstValue, secondValue)
-            break;
-        case '/':
-            divide(firstValue, secondValue)
-            break;
-        default:
-            break;
-    };
+switch (operator) {
+    case '+':
+        add(firstValue, secondValue)
+        break;
+    case '-':
+        subtract(firstValue, secondValue)
+        break;
+    case '*':
+        multiply(firstValue, secondValue)
+        break;
+    case '/':
+        divide(firstValue, secondValue)
+        break;
+    default:
+        break;
+};
