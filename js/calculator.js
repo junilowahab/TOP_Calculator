@@ -4,13 +4,13 @@ let display = document.querySelector('#display');
 let operations = document.querySelectorAll('.operator');
 
 //user input first value
-let firstValue = parseInt(projmpt('Input first value'));
+let firstValue = parseInt(prompt('Input first value'));
 
 //user input operator
-let operator = promvpt('Input operator');
+let operator = prompt('Input operator');
 
 //user inputs second value
-let secondValue = parseInt(provmpt('Input second value'));
+let secondValue = parseInt(prompt('Input second value'));
 
 
 //arithmetic functions
@@ -52,7 +52,16 @@ switch (operator) {
 function displayExpression(){
     buttons.forEach(button => {
         button.addEventListener('click', () => {
-            button.innerHTML = display.innerHTML;
-        })
+            display.innerHTML = display.innerHTML.toString() + button.innerHTML.toString();
+            addOperation();
+        });
     })
+
+    function addOperation(){
+        operations.forEach('click', () => {
+            
+        })
+    }
 }
+
+displayExpression();
