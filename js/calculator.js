@@ -1,3 +1,8 @@
+//linking nodes to the DOM
+let buttons = document.querySelectorAll('.buttons');
+let display = document.querySelector('#display');
+let operations = document.querySelectorAll('.operator');
+
 //user input first value
 let firstValue = parseInt(projmpt('Input first value'));
 
@@ -42,3 +47,12 @@ switch (operator) {
     default:
         break;
 };
+
+//function to display expressions
+function displayExpression(){
+    buttons.forEach(button => {
+        button.addEventListener('click', () => {
+            button.innerHTML = display.innerHTML;
+        })
+    })
+}

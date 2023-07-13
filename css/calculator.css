@@ -18,6 +18,7 @@
     margin: 5px;
     background-color: wheat;
     border-radius: 5px;
+    color: black;
 }
 
 .container{
@@ -53,4 +54,5 @@ td{
 td:hover{
     color: black;
     background-color: aliceblue;
+    cursor: pointer;
 }
