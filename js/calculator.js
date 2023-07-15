@@ -23,10 +23,10 @@ buttons.forEach(button => {
             doneSolution = false;
         };
         display.innerText = display.innerText.toString() + button.innerText.toString();
-        if(firstValue !== undefined){
-            secondValue = display.innerText;
-        }else{
+        if(arithmeticOperator === undefined){
             firstValue = display.innerText;
+        }else{
+            secondValue = display.innerText;
         };
     })
 });
@@ -65,6 +65,7 @@ equalsTo.addEventListener('click', () => {
     doneSolution = true;
 })
 
+//arithmetic functions
 function add(a, b){
     console.log(a + b);
     result = a + b;
